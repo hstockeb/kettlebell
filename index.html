@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kettlebell Coach</title>
+  <meta name="description" content="Daily kettlebell workouts with animated exercise guides and progress tracking.">
+  <meta name="theme-color" content="#ea580c">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><img src="icons/icon.svg" alt="" width="28" height="28"> Kettlebell Coach</div>
+    <div class="bell-weight" id="bellWeight"></div>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabs" aria-label="Main">
+    <button data-tab="today" class="active"><span>🏠</span>Today</button>
+    <button data-tab="library"><span>📖</span>Exercises</button>
+    <button data-tab="history"><span>📅</span>History</button>
+    <button data-tab="settings"><span>⚙️</span>Settings</button>
+  </nav>
+
+  <dialog id="modal"></dialog>
+  <div id="player" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
